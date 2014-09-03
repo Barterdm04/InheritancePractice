@@ -34,4 +34,24 @@ public class SalariedEmployee implements Employee{
     public void punchIn(){
         System.out.println("This Salaried employee has punched in!");
     }
+        @Override
+    public String getName() {
+        return name;
+    }
+
+
+    @Override
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public double getEmpNo() {
+        return empNo;
+    }
+
+    @Override
+    public void setEmpNo(double empNo) {
+        this.empNo = empNo;
+    }
 }

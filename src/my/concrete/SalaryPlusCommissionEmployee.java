@@ -15,8 +15,8 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee{
 
     public SalaryPlusCommissionEmployee(double commission, String name, double empNo, double salary) {
         super(name, empNo, salary);
-        salary += this.commission;
-        commission = this.commission;
+        this.salary += commission;
+        this.commission = commission;
     }
 
     public double getCommission() {

@@ -14,9 +14,8 @@ public class SalariedEmployee extends Employee{
     double salary;
     
     public SalariedEmployee(String name, double empNo, double salary){
-        super.name = name;
-        super.empNo = empNo;
-        salary = this.salary;
+        super(name, empNo);
+        this.salary = salary;
     }
 
     public double getSalary() {

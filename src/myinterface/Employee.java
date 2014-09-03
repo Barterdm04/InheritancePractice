@@ -6,8 +6,6 @@
 
 package myinterface;
 
-import myabstract.*;
-
 /**
  *
  * @author DB7
@@ -15,6 +13,9 @@ import myabstract.*;
 public interface Employee {
     
     public abstract void punchIn();
-    
+    public abstract String getName();
+    public abstract void setName(String name);
+    public abstract double getEmpNo();
+    public abstract void setEmpNo(double empNo);
 }
 

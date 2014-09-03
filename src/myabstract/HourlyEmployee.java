@@ -14,9 +14,8 @@ public class HourlyEmployee extends Employee {
     double hourlyRate;
     
     public HourlyEmployee(String name, double empNo, double hourlyRate){
-        super.name = name;
-        super.empNo = empNo;
-        hourlyRate = this.hourlyRate;
+        super(name,empNo);
+        this.hourlyRate = hourlyRate;
     }
 
     public double getHourlyRate() {

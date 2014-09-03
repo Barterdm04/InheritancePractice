@@ -11,13 +11,17 @@ package myinterface;
  *
  * @author DB7
  */
-public class SalaryPlusCommissionEmployee extends SalariedEmployee implements Employee{
+public class SalaryPlusCommissionEmployee implements Employee{
+    String name;
+    double empNo;
+    double salary;
     double commission;
 
     public SalaryPlusCommissionEmployee(double commission, String name, double empNo, double salary) {
-        super(name, empNo, salary);
-        salary += this.commission;
-        commission = this.commission;
+        this.name = name;
+        this.empNo = empNo;
+        this.salary = salary + commission;
+        this.commission = commission;
     }
 
     public double getCommission() {
@@ -31,7 +35,24 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee implements Em
     public void punchIn(){
         System.out.println("This salaried employee that earns commission has punched in!");
     }
-    
-    
-    
+        @Override
+    public String getName() {
+        return name;
+    }
+
+
+    @Override
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public double getEmpNo() {
+        return empNo;
+    }
+
+    @Override
+    public void setEmpNo(double empNo) {
+        this.empNo = empNo;
+    }
 }
