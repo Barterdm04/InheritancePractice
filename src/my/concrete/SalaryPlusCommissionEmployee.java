@@ -10,6 +10,15 @@ package my.concrete;
  *
  * @author DB7
  */
-public class SalaryPlusCommissionEmployee {
+public class SalaryPlusCommissionEmployee extends SalariedEmployee{
+    double commission;
+
+    public SalaryPlusCommissionEmployee(double commission, String name, double empNo, double salary) {
+        super(name, empNo, salary);
+        salary += this.commission;
+        commission = this.commission;
+    }
+    
+    
     
 }

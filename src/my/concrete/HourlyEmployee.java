@@ -10,6 +10,13 @@ package my.concrete;
  *
  * @author DB7
  */
-public class HourlyEmployee {
+public class HourlyEmployee extends Employee {
+    double hourlyRate;
     
+    public HourlyEmployee(String name, double empNo, double hourlyRate){
+        super.name = name;
+        super.empNo = empNo;
+        hourlyRate = this.hourlyRate;
+    }
+
 }
