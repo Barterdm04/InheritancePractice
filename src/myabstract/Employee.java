@@ -13,13 +13,16 @@ package myabstract;
 public abstract class Employee {
     String name;
     double empNo;
+    double minutesWorkedPerWeek;
  
+    
     public Employee() {
     }
     
-    public Employee(String name, double empNo) {
+    public Employee(String name, double empNo, double minutesWorkedPerWeek) {
         name = this.name;
         empNo = this.empNo;
+        minutesWorkedPerWeek = this.minutesWorkedPerWeek;
     }
 
     public String getName() {
