@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package my.concrete;
+package myabstract;
 
 /**
  *
@@ -26,5 +26,9 @@ public class HourlyEmployee extends Employee {
     public void setHourlyRate(double hourlyRate) {
         this.hourlyRate = hourlyRate;
     }
-
+    
+    @Override
+    public void punchIn(){
+        System.out.println("This hourly employee has punched in!");
+    }
 }

@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package my.concrete;
+package myabstract;
 
 /**
  *
@@ -25,6 +25,10 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee{
 
     public void setCommission(double commission) {
         this.commission = commission;
+    }
+    @Override
+    public void punchIn(){
+        System.out.println("This salaried employee that earns commission has punched in!");
     }
     
     
